@@ -22,7 +22,7 @@
             android:name=".service.ServerService"
             android:exported="true">
             <intent-filter>
-                <action android:name="aidlexample" />
+                <action android:name="sampleaidl" />
             </intent-filter>
         </service>
     </application>

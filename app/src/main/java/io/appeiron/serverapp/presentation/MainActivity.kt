@@ -34,9 +34,8 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    override fun onResume() {
-        super.onResume()
-
+    override fun onStart() {
+        super.onStart()
         //Register Receiver
         LocalBroadcastManager.getInstance(this).registerReceiver(
             receiver,
@@ -44,9 +43,10 @@ class MainActivity : AppCompatActivity() {
         )
     }
 
-    override fun onPause() {
-        super.onPause()
+    override fun onDestroy() {
+        super.onDestroy()
         //Unregister the receiver
         unregisterReceiver(receiver)
     }
+
 }

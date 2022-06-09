@@ -3,4 +3,5 @@
     <string name="last_connected_client_info">Last Connected Client Info</string>
     <string name="client_package_name">Client Package Name</string>
     <string name="client_process_id">Client Process Id</string>
+    <string name="client_request_id">Client Request Id</string>
 </resources>
